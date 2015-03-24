@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		14C3398F1AC20A060028F187 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C3398E1AC20A060028F187 /* main.m */; };
 		14C339921AC20A060028F187 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C339911AC20A060028F187 /* AppDelegate.m */; };
-		14C339951AC20A060028F187 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C339941AC20A060028F187 /* ViewController.m */; };
 		14C339981AC20A060028F187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C339961AC20A060028F187 /* Main.storyboard */; };
 		14C3399A1AC20A060028F187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C339991AC20A060028F187 /* Images.xcassets */; };
 		14C3399D1AC20A060028F187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C3399B1AC20A060028F187 /* LaunchScreen.xib */; };
 		14C339A91AC20A060028F187 /* TaskAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C339A81AC20A060028F187 /* TaskAppTests.m */; };
+		14C339B41AC20A7E0028F187 /* CustomerTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C339B31AC20A7E0028F187 /* CustomerTableController.m */; };
+		14C339BF1AC20D370028F187 /* CustomerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C339BE1AC20D370028F187 /* CustomerCell.m */; };
+		14C339C31AC20F970028F187 /* WebServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C339C21AC20F970028F187 /* WebServiceManager.m */; };
+		14C339C51AC216220028F187 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C339C41AC216220028F187 /* Foundation.framework */; };
+		14C339C91AC22A1C0028F187 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C339C81AC22A1C0028F187 /* NSString+MD5.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C339CE1AC22E970028F187 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C339CD1AC22E970028F187 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +37,23 @@
 		14C3398E1AC20A060028F187 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14C339901AC20A060028F187 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14C339911AC20A060028F187 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14C339931AC20A060028F187 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14C339941AC20A060028F187 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		14C339971AC20A060028F187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14C339991AC20A060028F187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14C3399C1AC20A060028F187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		14C339A21AC20A060028F187 /* TaskAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C339A71AC20A060028F187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C339A81AC20A060028F187 /* TaskAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskAppTests.m; sourceTree = "<group>"; };
+		14C339B21AC20A7E0028F187 /* CustomerTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomerTableController.h; path = Controllers/CustomerTableController.h; sourceTree = "<group>"; };
+		14C339B31AC20A7E0028F187 /* CustomerTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerTableController.m; path = Controllers/CustomerTableController.m; sourceTree = "<group>"; };
+		14C339BD1AC20D370028F187 /* CustomerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomerCell.h; path = Design/Cell/CustomerCell.h; sourceTree = "<group>"; };
+		14C339BE1AC20D370028F187 /* CustomerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerCell.m; path = Design/Cell/CustomerCell.m; sourceTree = "<group>"; };
+		14C339C11AC20F970028F187 /* WebServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebServiceManager.h; path = Manager/WebServiceManager.h; sourceTree = "<group>"; };
+		14C339C21AC20F970028F187 /* WebServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebServiceManager.m; path = Manager/WebServiceManager.m; sourceTree = "<group>"; };
+		14C339C41AC216220028F187 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14C339C71AC22A1C0028F187 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		14C339C81AC22A1C0028F187 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		14C339CC1AC22E970028F187 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		14C339CD1AC22E970028F187 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C339C51AC216220028F187 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 		14C339801AC20A060028F187 = {
 			isa = PBXGroup;
 			children = (
+				14C339C41AC216220028F187 /* Foundation.framework */,
 				14C3398B1AC20A060028F187 /* TaskApp */,
 				14C339A51AC20A060028F187 /* TaskAppTests */,
 				14C3398A1AC20A060028F187 /* Products */,
@@ -81,10 +97,13 @@
 		14C3398B1AC20A060028F187 /* TaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				14C339CA1AC22E970028F187 /* Libraries */,
+				14C339C61AC22A1C0028F187 /* Categories */,
+				14C339C01AC20F6F0028F187 /* Manager */,
+				14C339BB1AC20D120028F187 /* Design */,
+				14C339B51AC20A820028F187 /* Controllers */,
 				14C339901AC20A060028F187 /* AppDelegate.h */,
 				14C339911AC20A060028F187 /* AppDelegate.m */,
-				14C339931AC20A060028F187 /* ViewController.h */,
-				14C339941AC20A060028F187 /* ViewController.m */,
 				14C339961AC20A060028F187 /* Main.storyboard */,
 				14C339991AC20A060028F187 /* Images.xcassets */,
 				14C3399B1AC20A060028F187 /* LaunchScreen.xib */,
@@ -117,6 +136,67 @@
 				14C339A71AC20A060028F187 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14C339B51AC20A820028F187 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				14C339B21AC20A7E0028F187 /* CustomerTableController.h */,
+				14C339B31AC20A7E0028F187 /* CustomerTableController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		14C339BB1AC20D120028F187 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				14C339BC1AC20D160028F187 /* Cell */,
+			);
+			name = Design;
+			sourceTree = "<group>";
+		};
+		14C339BC1AC20D160028F187 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				14C339BD1AC20D370028F187 /* CustomerCell.h */,
+				14C339BE1AC20D370028F187 /* CustomerCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		14C339C01AC20F6F0028F187 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				14C339C11AC20F970028F187 /* WebServiceManager.h */,
+				14C339C21AC20F970028F187 /* WebServiceManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		14C339C61AC22A1C0028F187 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				14C339C71AC22A1C0028F187 /* NSString+MD5.h */,
+				14C339C81AC22A1C0028F187 /* NSString+MD5.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		14C339CA1AC22E970028F187 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				14C339CB1AC22E970028F187 /* Reachability */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		14C339CB1AC22E970028F187 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				14C339CC1AC22E970028F187 /* Reachability.h */,
+				14C339CD1AC22E970028F187 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C339951AC20A060028F187 /* ViewController.m in Sources */,
+				14C339C91AC22A1C0028F187 /* NSString+MD5.m in Sources */,
+				14C339C31AC20F970028F187 /* WebServiceManager.m in Sources */,
 				14C339921AC20A060028F187 /* AppDelegate.m in Sources */,
+				14C339CE1AC22E970028F187 /* Reachability.m in Sources */,
+				14C339B41AC20A7E0028F187 /* CustomerTableController.m in Sources */,
 				14C3398F1AC20A060028F187 /* main.m in Sources */,
+				14C339BF1AC20D370028F187 /* CustomerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +432,7 @@
 				INFOPLIST_FILE = TaskApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -358,6 +443,7 @@
 				INFOPLIST_FILE = TaskApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
